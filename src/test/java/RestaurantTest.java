@@ -90,26 +90,26 @@ class RestaurantTest {
                 ()->restaurant.removeFromMenu("French fries"));
     }
     //<<<<<<<<<<<<<<<<<<<<<<<MENU>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-//
-//    //pass case scenario
-//    @Test
-//    public void assert_price_after_adding_items_is_equal_to_totalPrice_of_added_items() {
-//        restaurant.addToMenu("Veg Lasagn", 200);
-//        String[] selectItems = {"Veg Lasagn", "Vegetable lasagne"};
-//        int totalCost = restaurant.calculateSelectedItemsPrice(selectItems);
-//
-//        assertEquals(469, totalCost);
-//
-//    }
-//
-//    //Negative scenario
-//    @Test
-//    public void assert_price_after_adding_items_is_if_price_not_equal_to_totalPrice_of_added_items() {
-//        restaurant.addToMenu("Veg Lasagn", 200);
-//        String[] selectItems = {"Veg Lasagn", "Vegetable lasagne"};
-//        int totalCost = restaurant.calculateSelectedItemsPrice(selectItems);
-//
-//        assertNotEquals(300, totalCost);
-//
-//    }
+
+   //pass case scenario
+   @Test
+   public void assert_price_after_adding_items_is_equal_to_totalPrice_of_added_items() {
+       restaurant.addToMenu("Veg chops", 200);
+       String[] selectItems = {"Veg chops", "Vegetable lasagne"};
+       int totalCost = restaurant.calculateSelectedItemsPrice(selectItems);
+
+       assertEquals(469, totalCost);
+
+   }
+
+   //Negative scenario
+   @Test
+   public void assert_price_after_adding_items_is_if_price_not_equal_to_totalPrice_of_added_items() {
+       restaurant.addToMenu("Veg Lasagn", 200);
+       String[] selectItems = {"Veg Lasagn", "Vegetable lasagne"};
+       int totalCost = restaurant.calculateSelectedItemsPrice(selectItems);
+
+       assertNotEquals(300, totalCost);
+
+   }
 }

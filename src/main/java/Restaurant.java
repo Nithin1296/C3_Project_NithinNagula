@@ -80,20 +80,20 @@ public class Restaurant {
     }
 
 
-//
-//    public int calculateSelectedItemsPrice(String[] selectItems){
-//
-//        int newPrice = 0;
-//        //getMenu();
-//
-//        for(Item item: menu) {
-//            for (String name : selectItems) {
-//                if (item.getName().equals(name))
-//                    newPrice = item.getPrice() + newPrice;
-//
-//            }
-//        }
-//
-//        return newPrice;
-//    }
+
+   public int calculateSelectedItemsPrice(String[] selectItems){
+
+       int newPrice = 0;
+       //getMenu();
+
+       for(Item item: menu) {
+           for (String name : selectItems) {
+               if (item.getName().equals(name))
+                   newPrice = item.getPrice() + newPrice;
+
+           }
+       }
+
+       return newPrice;
+   }
 }

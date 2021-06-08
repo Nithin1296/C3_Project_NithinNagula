@@ -12,12 +12,6 @@ public class RestaurantService {
 
 
     public Restaurant findRestaurantByName(String restaurantName) throws restaurantNotFoundException{
-//
-//        Restaurant findRestaurantByName1 = new Restaurant("Amelie's cafe","Chennai", LocalTime.of(10,00),LocalTime.of(23,00));
-//        Restaurant findRestaurantByName2 = new Restaurant("Pantry d'or","Chennai", LocalTime.of(10,00),LocalTime.of(23,00));
-//        Restaurant findRestaurantByName3 = new Restaurant("Mauritius hotel","Chennai", LocalTime.of(10,00),LocalTime.of(23,00));
-//
-//        List<Restaurant> restaurants = Arrays.asList(findRestaurantByName1, findRestaurantByName2, findRestaurantByName3);
 
         Restaurant foundRestaurant = null;
         for (Restaurant restaurant : restaurants) {
